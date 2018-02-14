@@ -1,0 +1,11 @@
+{
+  "name": "Eat It",
+  "version": "1.0.0",
+  "description": "This is the API documentation.",
+  "title": "Eat It",
+  "url": "http://192.168.1.62:6511/api/v1",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
