@@ -1,10 +1,7 @@
-# GytFyt
+# Practice
 
 ### Install NodeJS and NPM
 [How to install NodeJS/NPM on AWS/CentOS](https://nodejs.org/en/download/package-manager/)
-
-### Clone code base
-git clone (http://git.sa-labs.info/eat-it/eat-it-backend-nodejs.git)
 
 ### Install depedencies
 

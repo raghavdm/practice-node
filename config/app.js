@@ -1,9 +1,7 @@
 global._ = require("lodash")
 global.errorUtil = require('../helper/error');
 global.config = require('../config/config');
-require('../config/database');
 global.l10n = require('jm-ez-l10n');
-l10n.setTranslationsFile('en', './language/translation.en.json');
 let express = require('express');
 let bodyParser = require('body-parser');
 let app = express();

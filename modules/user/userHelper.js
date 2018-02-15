@@ -1,15 +1,15 @@
 let utils = require('../../helper/utils')
-let menuUtil = {}
+let userUtil = {}
 
-menuUtil.menuDetail = (data, selectData) => {
-  let menu = {}
+userUtil.userDetail = (data, selectData) => {
+  let user = {}
   if (utils.empty(selectData)) {
     selectData = ['_id']
   }
   _(selectData).forEach((val) => {
-    menu[val] = data[val]
+    user[val] = data[val]
   })
-  return menu
+  return user
 }
 
-module.exports = menuUtil
+module.exports = userUtil

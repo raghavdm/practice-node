@@ -1,5 +1,5 @@
 let validator = {
-  getMenuValidator: function (req, type) {
+  getUserValidator: function(req, type) {
     let input = {
       login: {
         email: ['isEmail', req.t('EMAIL_NOT_VALID')],

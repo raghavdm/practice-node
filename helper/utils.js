@@ -1,8 +1,6 @@
 let fs = require('fs');
 let crypto = require('crypto');
-let mongoose = require('mongoose');
 let path = require('path');
-let async = require('async');
 const url = require('url');
 const https = require('https');
 
