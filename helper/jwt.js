@@ -7,14 +7,10 @@ let jwtUtil = {};
  * @return String
  */
 jwtUtil.createSecretToken = (data) => {
-    let token = jwt.encode(data, config.SECRET);
-    return token;
-  }
-  /*
-   * For Get User ID Form SecretToken
-   * @param Int uid Uid
-   * @return String
-   */
+  let token = jwt.encode(data, config.SECRET);
+  return token;
+}
+  
 jwtUtil.decodeToken = (token) => {
   var data = {};
   if (token) {
@@ -27,30 +23,5 @@ jwtUtil.decodeToken = (token) => {
   }
   return data;
 }
-jwtUtil.getUserId = (token) => {
-  let userID = "";
-  if (token) {
-    try {
-      let decoded = jwt.decode(token, config.SECRET);
-      console.log(decoded);
-      userID = decoded.uid;
-    } catch (err) {
-      userID
-    }
-  }
-  return userID;
-}
-jwtUtil.getCurrentUserId = (req) => {
-  let token = (req.headers && req.headers['x-auth-token']);
-  let userID = "";
-  if (token) {
-    try {
-      let decoded = jwt.decode(token, config.SECRET);
-      userID = decoded.uid;
-    } catch (err) {
-      userID
-    }
-  }
-  return userID;
-}
+
 module.exports = jwtUtil

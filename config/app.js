@@ -1,5 +1,4 @@
 global._ = require("lodash")
-global.errorUtil = require('../helper/error');
 global.config = require('../config/config');
 global.l10n = require('jm-ez-l10n');
 let express = require('express');
